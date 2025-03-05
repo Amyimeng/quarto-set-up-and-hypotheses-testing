@@ -24,18 +24,13 @@ Below is my file tree:
 
 quarto set up and hypotheses testing/
 │── README.md
-│── quarto-set-up-and-hypotheses-testing.pdf
-│── quarto set up and hypotheses testing.Rproj
-│── quarto set up and hypotheses testing.qmd
-│── example.qmd
-│── correlation_table.doc
+│── quarto-test.pdf
+│── quarto-test.Rproj
+│── quarto-test.qmd
 │── bibliography.bib
 │── assessment.md
-│── .Rhistory
-│── .RData
 │── .gitignore
 │── math-anxiety.csv
-│── sampleimage.png
 │── _extensions/
 
 </pre>

@@ -13,15 +13,15 @@
 
 Name: Yimeng Cheng
 
-CNetID:yiemngcheng
+CNetID: yiemngcheng
 
 Section: 1
 
 Mini-project title: "Quarto Set Up, Descriptive Statistics and Hypotheses Testing"
 
-Submission date:
+Submission date: 03/05/2025
 
-Project GitHub subdirectory URL:
+Project GitHub subdirectory URL: Amyimeng/quarto-set-up-and-hypotheses-testing
 
 URL or instructions to access additional materials, if needed:
 
@@ -30,8 +30,11 @@ URL or instructions to access additional materials, if needed:
 1.  Did you complete the project with direct collaborators or general support? If so, who did you collaborate with and what was/were their contribution(s)? \### No
     1.  Direct collaborators (students who will be turning in a version of the same project) and their contributions:
     2.  General support (students who helped you with debugging, conceptual understanding, or the like) and their contributions:
+        -   Yangyang Fu and I had study sessions to working together, although on different projects. She helped me debugging with quarto set up.
+
+        -   Ruochen Li helped me with APA formatting. Specifically, she helped me fixed formatting issues for APA tables.
 2.  Did you use LLMs or other AI models to generate text or code for this project? If so, which tools did you use and how did you use them? Remember in this class you *are* allowed (even encouraged) to use these tools for help with coding, but not for writing text. This can be very brief, just one or two sentences is fine unless you have more you'd like to add.
-    1.  answer here Yes, I asked ChatGPT about ways to realize certain functions, but I just asked for the general function. I also asked it to help me debug but it is not always helpful. I end up just searching general information on Google.
+    1.  Yes, I asked ChatGPT about ways to realize certain functions, but I just asked for the general function, such as alternative package for flextable as this package did not work on my computer. I also asked it to help me debug but it is not always helpful. I end up just searching general information on Google.
 3.  For off-the-menu projects only, did you complete the project as proposed? If not, what changed?
     1.  answer here: Yes, I basically created a new repo and used "math-anxiety.csv" as my dataset and performed statistical analysis and hypotheses testing. More information can be found in the README.md file.
 
@@ -451,34 +454,80 @@ You are not required to demonstrate these objectives in your independent project
 
 ### Troubleshooting, debugging, and best practices
 
-1.  use frequent, informative comments in code and markdown
-2.  find and understand documentation for R packages and functions
-3.  follow a debugging workflow with independent and collaborative strategies
-4.  parse and investigate error messages
-5.  follow a coding style guide
+1.  use frequent, informative comments in code and markdown √
+2.  find and understand documentation for R packages and functions √
+3.  follow a debugging workflow with independent and collaborative strategies √
+4.  parse and investigate error messages √
+5.  follow a coding style guide √
 
 ### RStudio & R
 
-6.  customize RStudio
-7.  use BibTeX with `citr` and Zotero integration
-8.  parse and write complex `for` and `while` loops
-9.  create and use intermediate datasets
-10. determine when code is better suited for a sourced script vs. a notebook chunk and source scripts appropriately
+6.  customize RStudio√
+7.  use BibTeX with `citr` and Zotero integration √
+8.  parse and write complex `for` and `while` loops √
+9.  create and use intermediate datasets √
+10. determine when code is better suited for a sourced script vs. a notebook chunk and source scripts appropriately √
 
 ### Conceptual skills
 
-11. explain and apply the “grammar of graphics”
-12. name and differentiate R data types
-13. name and differentiate R objects
-14. define “tidy” data and explain its advantages and disadvantages
-15. recognize and interpret common data visualizations
-16. determine most appropriate visualizations and analyses for specific research questions and data
+11. explain and apply the “grammar of graphics” √
+12. name and differentiate R data types √
+13. name and differentiate R objects √
+14. define “tidy” data and explain its advantages and disadvantages √
+15. recognize and interpret common data visualizations √
+16. determine most appropriate visualizations and analyses for specific research questions and data √
 
 ### Unassessed objectives evaluation
 
 If you believe you have demonstrated any of the above skills sufficiently to count toward the 20 additional objectives-based points, please indicate which objective(s) you believe you have met and provide a brief explanation of how you have met each objective.
 
 <!-- Explanation of demonstrated unassessed objectives below this line -->
+
+1.  use frequent, informative comments in code and markdown √
+
+    -   Comments as shown in the .qmd file
+
+2.  find and understand documentation for R packages and functions √
+
+    -   I used ? function frequently to look up functions
+
+3.  follow a debugging workflow with independent and collaborative strategies √
+
+    -   I first see what the error message suggests and then if I can't find what's wrong I will google or as AI or friends
+
+4.  parse and investigate error messages √
+
+    -   I first see what the error message suggests and then if I can't find what's wrong I will google or as AI or friends. One example is that when I try to render the error message suggested 'complex' issue and AI did not know why either. I put each chunk in a separate .qmd file and found the issue block.
+
+5.  follow a coding style guide √
+
+    -   I tried to maintain consistency throughout the document, including the use of captions, titles and #\| label etc.
+
+6.  customize RStudio√
+
+    -   I set my RStudio to dark mode
+
+7.  use BibTeX with `citr` and Zotero integration √
+
+    -   I downloaded bibliography to Zotero, and used various plug-ins
+
+    9.  create and use intermediate datasets √
+        -   As indicated in the .qmd file I used various intermediate datasets, including math.anx, summary_stats_wide etc.
+    10. determine when code is better suited for a sourced script vs. a notebook chunk and source scripts appropriately √
+        -   I used notebook chunk to describe my actions and interpret data, and used code chunk to run codes
+    11. explain and apply the “grammar of graphics” √
+        -   As indicated in the .qmd file I used ggplot2 to create various graphs
+    12. name and differentiate R data types √
+        -   I used different data types including numeric, character and factor
+    13. name and differentiate R objects √
+        -   I created various R objects and functions
+
+    <!-- -->
+
+    15. recognize and interpret common data visualizations √
+        -   as indicated in the qmd file I used various data visualizations including histogram and violinplot
+    16. determine most appropriate visualizations and analyses for specific research questions and data √
+        -   I explained in the .qmd file why I chose these certain types of visualizations
 
 <!-- Explanation of demonstrated unassessed objectives above this line -->
 
@@ -497,6 +546,10 @@ Optionally, you may provide a brief reflection on your experience with this proj
 Thoughtful reflections may earn engagement points.
 
 <!-- Reflection below this line -->
+
+I feel like the process of problem-solving is both painful and rewarding. I often found myself spent way much more time planned on debugging, but once I found the bug I am very satisfied. Also it is important to understand the grammar of codes. Relying on AI would actually result in a more time-consuming process as once a bug occurs you need to learn from the begining to find the bug anyway.
+
+Another thing is that maintaining an organized environment is important. It helps with identifying what went wrong.
 
 <!-- Do not edit below this line. -->
 
