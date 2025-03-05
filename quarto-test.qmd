@@ -35,6 +35,12 @@ format:
     # Can be jou (journal), man (manuscript), stu (student), or doc (document)
     documentmode: man
     keep-tex: true
+    include-in-header:
+      text: |
+        \usepackage{listings}
+        \lstset{
+          breaklines=true
+        }
 ---
 
 ```{r}
@@ -366,7 +372,7 @@ ggplot(math_anxiety_data, aes(x = Score)) +
 
 ```
 
-**Extra step: Math Anxiety vs. Statistics Anxiety Scores**
+### Extra step: Math Anxiety vs. Statistics Anxiety Scores
 
 ```{r}
 #| label: fig-math-stats-anxiety
@@ -442,7 +448,7 @@ ggplot(math.anx, aes(x = Survey_Type, y = Score, fill = Survey_Type)) +
 
 ```
 
-@fig-violin-survey-scores-with-facet tells us that Perfectionism Self−Presentation is quite negatively skewed, potentially suggesting the presence of outliers or extreme values.
+@fig-violin-survey-scores-publication-quality tells us that Perfectionism Self−Presentation is quite negatively skewed, potentially suggesting the presence of outliers or extreme values.
 
 Next, I will analyze all survey scores by program type.
 
@@ -646,6 +652,12 @@ anova_table <- broom::tidy(anova_ethnicity) %>%
 As shown in Table 4, there was no significant effect of ethnicity, F(`r formatC(summary(anova_ethnicity)[[1]][["F value"]][1], digits = 2, format = "f")`, `r summary(anova_ethnicity)[[1]][["Df"]][1]`, `r summary(anova_ethnicity)[[1]][["Df"]][2]`) = `r formatC(summary(anova_ethnicity)[[1]][["F value"]][1], digits = 2, format = "f")`, p = `r ifelse(summary(anova_ethnicity)[[1]][["Pr(>F)"]][1] < .001, "< .001", formatC(summary(anova_ethnicity)[[1]][["Pr(>F)"]][1], digits = 3, format = "f"))`.
 
 This means the null hypothesis was not rejected and Perfectionism Self-Presentation does not vary across different ethnicity.
+
+
+
+
+
+
 
 # References
 
