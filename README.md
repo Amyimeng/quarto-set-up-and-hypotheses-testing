@@ -25,7 +25,7 @@ Below is my file tree:
 quarto set up and hypotheses testing/
 │── README.md
 │── quarto-test.pdf
-│── quarto-test.Rproj
+│── quarto set up and hypotheses testing.Rproj
 │── quarto-test.qmd
 │── bibliography.bib
 │── assessment.md
